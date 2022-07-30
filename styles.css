@@ -35,7 +35,7 @@ body{
     color: #27292a;
     padding: 40px;
     position: absolute;
-    top: 4px;
+    top: 8px;
     left: 10px;
     pointer-events: none;
     transition: 0.3s ease all;
@@ -56,7 +56,7 @@ body{
     left: 35px;
     background: #ffff;
     padding: 0 5px 0 5px;
-    background-color: #2B2748;
+    background-color: #2B2748
 }
 
 /* Navigation Bar*/
