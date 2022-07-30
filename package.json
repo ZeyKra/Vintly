@@ -1,20 +1,18 @@
 {
-  "name": "electron-quick-start",
+  "name": "guinted",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "Guinted is a QOL tool to simplify item's research on Vinted 🔍.",
   "main": "main.js",
+  "type": "module",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/ZeyKra/Guinted",
   "keywords": [
     "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "Vinted"
   ],
-  "author": "GitHub",
+  "authors": ["Feukz", "Adryan (ZeyKra)" ], 
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^19.0.9"
