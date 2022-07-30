@@ -12,7 +12,10 @@
     "Electron",
     "Vinted"
   ],
-  "authors": ["Feukz", "Adryan (ZeyKra)" ], 
+  "authors": [
+    "Feukz",
+    "Adryan (ZeyKra)"
+  ],
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^19.0.9"
