@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Guinted is a QOL tool to simplify item's research on Vinted 🔍.",
   "main": "main.js",
-  "type": "module",
   "scripts": {
     "start": "electron ."
   },
