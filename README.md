@@ -1,4 +1,4 @@
-# Guinted <img alt="Guinted" src=""/>
+# Guinted <img  width="30px" alt="Guinted" src="Guinted-logo.png"/>
 
 ### Guinted is a QOL tool to simplify item's research on Vinted 🔍
 
