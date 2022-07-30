@@ -1,14 +1,12 @@
 /* styles.css */
 
 /* Add styles here to customize the appearance of your app */
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Cormorant+SC:wght@700&family=Nunito&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Press+Start+2P&family=Righteous&family=Roboto&family=Roboto+Condensed:wght@700&display=swap');
 
 /* Research bar */
 *{
     box-sizing: border-box;
 }
 body{
-    font-family: Poppins, sans-serif;
     background: linear-gradient(146.11deg, #342574 20.43%, rgba(255, 255, 255, 0) 79.91%), linear-gradient(202.81deg, #0c0635 38.99%, rgba(255, 255, 255, 0) 85.2%), #04001d;
     display: flex;
     align-items: center;
@@ -30,7 +28,6 @@ body{
     box-shadow: 0px 10px 20px 0px rgb(0 0 0 / 40%);
 }
 .input-wrap label {
-    font-family: Poppins, sans-serif;
     font-size: 20px;
     color: #27292a;
     padding: 40px;
