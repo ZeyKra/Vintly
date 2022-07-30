@@ -19,8 +19,8 @@ body{
     border-radius: 5px;
     height: 122px;
     width: 550px;
-    color: black;
-    font-size: 14px;
+    color: rgb(212, 198, 198);
+    font-size: 25px;
     padding-left: 20px;
     outline: none;
     border-radius: 100px;
@@ -47,7 +47,7 @@ body{
 }
 .input:focus+label ,
 .input:valid+label{
-    font-size: 14px;
+    font-size: 17px;
     color: #27292a;
     top: 15px;
     left: 35px;
