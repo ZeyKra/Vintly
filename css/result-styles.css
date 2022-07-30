@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Cormorant+SC:wght@700&family=Nunito&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Press+Start+2P&family=Righteous&family=Roboto&family=Roboto+Condensed:wght@700&display=swap');
+
+
+/* Background*/
+
+body{
+    font-family: Poppins, sans-serif;
+    background: linear-gradient(146.11deg, #342574 20.43%, rgba(255, 255, 255, 0) 79.91%), linear-gradient(202.81deg, #0c0635 38.99%, rgba(255, 255, 255, 0) 85.2%), #04001d;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Navigation Bar*/
+
+*{
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height:100vh ;
+}
+.nav{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    bottom: 20px;
+    width: 230px;
+    border-radius: 10px;
+    box-sizing: initial;
+    border-left: 5px solid #2B2748;
+    background-color: #2B2748;
+    transition: 0.5s;
+}
+.nav ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 40px;
+}
+.nav ul li{
+    position: relative;
+    list-style: none;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.nav ul li a{
+    position: relative;
+    display: bock;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+}
+.nav ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+.nav ul li a .icon ion-icon{
+    font-size: 1.5em;
+}
+.nav ul li a .title{
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    height: 60px;
+    line-height: 60px;
+    white-space: normal;
+}
