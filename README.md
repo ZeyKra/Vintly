@@ -4,7 +4,7 @@
 
 ## To Use
 
-To use `Guinted`, type the link of the item you want in the input in the middle of the page.
+To use Guinted, type the link of the item you want in the `Item Choosing Input` in the middle of the page.
 
 ```bash
 
