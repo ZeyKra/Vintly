@@ -7,7 +7,6 @@
 .input, .input-wrap{
     animation: transitionIn 0.75s;
 }
-
 @keyframes transitionIn {
     from {
         opacity: 0;
@@ -20,6 +19,7 @@
 }
 
 /* Research bar */
+
 *{
     box-sizing: border-box;
 }
@@ -137,4 +137,12 @@ body{
     height: 60px;
     line-height: 60px;
     white-space: normal;
+}
+#guinted{
+    position:absolute;
+    bottom: 20px;
+    right: 20px;
+    bottom: 20px;
+    opacity: 0.7;
+    width: 40px;
 }
