@@ -5,15 +5,45 @@
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
     <link href="./styles.css" rel="stylesheet">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Cormorant+SC:wght@700&family=Nunito&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Press+Start+2P&family=Righteous&family=Roboto&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
     <title>Hello World!</title>
   </head>
   <body>
-    <h1>Guinted</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
-
+    <div class="input-wrap">
+      <input type="text" class="input" required>
+      <label for="" style="color: white; font-family:'Poppins', sans-serif;;">
+        Type the link 
+      </label>
+    </div>
+    <!--Nav Bar-->
+    <div class="nav">
+      <ul>
+        <li class="list" active>
+          <a href="#">
+            <span class="icon"><ion-icon name="home">1</ion-icon></span>
+            <span class="title">Home</span>
+          </a>  
+        </li>
+        <li class="list">
+          <a href="#">
+            <span class="icon"><ion-icon name="home">2</ion-icon></span>
+            <span class="title">Settings</span>
+          </a>  
+        </li>
+        <li class="list">
+          <a href="#">
+            <span class="icon"><ion-icon name="information-circle-outline">3</ion-icon></span>
+            <span class="title">Help</span>
+          </a>
+        </li>
+      </ul>
+    </div>
     <!-- You can also require other files to run in this process -->
     <script src="./renderer.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
