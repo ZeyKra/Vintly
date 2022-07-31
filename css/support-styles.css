@@ -75,3 +75,14 @@ body{
     line-height: 60px;
     white-space: normal;
 }
+
+/* Down logo */
+
+#guinted{
+    position:absolute;
+    bottom: 20px;
+    right: 20px;
+    bottom: 20px;
+    opacity: 0.7;
+    width: 40px;
+}

@@ -138,6 +138,9 @@ body{
     line-height: 60px;
     white-space: normal;
 }
+
+/* Down logo */
+
 #guinted{
     position:absolute;
     bottom: 20px;
