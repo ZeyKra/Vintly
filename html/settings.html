@@ -19,6 +19,14 @@
 </head>
 
 <body>
+    <!-- Setting Main Page-->
+    <div class="settings-shadow"></div>
+    <div class="settings"></div>
+    <div class="settings-main-text">Appearance</div>
+    <div class="wheel"><ion-icon name="cog-outline"></ion-icon></div>
+    <ul>
+        <li class="settings-theme-text">Theme</li>
+    </ul>
     <!--Nav Bar-->
     <div class="nav">
         <ul>
@@ -39,6 +47,12 @@
                 </a>
             </li>
             <li class="list">
+                <a href="history-search.html">
+                  <span class="icon"><ion-icon name="refresh-outline"></ion-icon></span>
+                  <span class="title">Search history</ion-icon></span>
+                </a>
+              </li>
+            <li class="list">
                 <a href="#">
                     <span class="icon">
                         <ion-icon name="settings-outline" class="currenticon"></ion-icon>
@@ -49,7 +63,7 @@
             <li class="list">
                 <a href="support.html">
                     <span class="icon">
-                        <ion-icon name="information-circle-outline" class="currenticon"></ion-icon>
+                        <ion-icon name="information-outline" class="currenticon"></ion-icon>
                     </span>
                     <span class="title">Support</span>
                 </a>
@@ -59,6 +73,7 @@
     <a href="https://github.com/ZeyKra/Guinted">
         <img id="guinted" src="../icon/Guinted-logo.png">
     </a>
+    <div class="version">version: beta_0.1</div>
     <!-- You can also require other files to run in this process -->
     <script src="./renderer.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
