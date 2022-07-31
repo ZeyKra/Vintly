@@ -61,7 +61,7 @@ body{
     display: block;
     min-width: 60px;
     height: 60px;
-    line-height: 60px;
+    line-height: 70px;
     text-align: center;
 }
 .nav ul li a .icon ion-icon{
@@ -90,8 +90,8 @@ body{
 
 #tooltiptext{
     position: absolute;
-    left: 91.7%;
-    top: 94%;
+    left: 91.1%;
+    top: 93.8%;
     transform: translateX(-50%);
     background-color:#000 ;
     color: #fff;
@@ -105,7 +105,7 @@ body{
     content: "";
     position: absolute;
     left: 100%;
-    top: 10%;
+    top: 17%;
     transform: translateX(-50%);
     border: 15px solid;
     border-color: #000 #0000 #0000 #0000;
@@ -114,4 +114,11 @@ body{
 #tooltip:hover #tooltiptext{
     top: -130%;
     opacity: 0;
+}
+
+/* Arrow */
+
+#arrow {
+    position: relative;
+    top: 3px;
 }

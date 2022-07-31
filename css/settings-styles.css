@@ -61,7 +61,7 @@ body{
     display: block;
     min-width: 60px;
     height: 60px;
-    line-height: 60px;
+    line-height: 70px;
     text-align: center;
 }
 .nav ul li a .icon ion-icon{
@@ -85,4 +85,11 @@ body{
     bottom: 20px;
     opacity: 0.7;
     width: 40px;
+}
+
+/* Arrow */
+
+#arrow {
+    position: relative;
+    top: 3px;
 }

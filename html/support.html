@@ -2,6 +2,8 @@
 <html>
 
 <head>
+    <!-- Import Ion-Icons-->
+    <IonIcon icon={arrowBack} />
     <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <meta http-equiv="Content-Security-Policy"
@@ -23,39 +25,39 @@
             <li class="list" active>
                 <a href="../index.html">
                     <span class="icon">
-                        <ion-icon name="home">🏠</ion-icon>
+                        <ion-icon name="home-outline" class="currenticon"></ion-icon>
                     </span>
-                    <span class="title">Home &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp⭕</span>
+                    <span class="title">Home </span>
                 </a>
             </li>
             <li class="list">
                 <a href="result.html">
                     <span class="icon">
-                        <ion-icon name="home">🔍</ion-icon>
+                        <ion-icon name="search-outline" class="currenticon"></ion-icon>
                     </span>
-                    <span class="title">Results &nbsp&nbsp&nbsp&nbsp&nbsp⭕</span>
+                    <span class="title">Results &nbsp&nbsp&nbsp&nbsp&nbsp</span>
                 </a>
             </li>
             <li class="list">
                 <a href="settings.html">
                     <span class="icon">
-                        <ion-icon name="information-circle-outline">⚙️</ion-icon>
+                        <ion-icon name="settings-outline" class="currenticon"></ion-icon>
                     </span>
-                    <span class="title">Settings &nbsp&nbsp&nbsp&nbsp⭕</span>
+                    <span class="title">Settings &nbsp&nbsp&nbsp&nbsp</span>
                 </a>
             </li>
             <li class="list">
                 <a href="#">
                     <span class="icon">
-                        <ion-icon name="information-circle-outline">📞</ion-icon>
+                        <ion-icon name="information-circle-outline" class="currenticon"></ion-icon>
                     </span>
-                    <span class="title">Support &nbsp&nbsp&nbsp&nbsp&nbsp🔴</span>
+                    <span class="title">Support &nbsp&nbsp<ion-icon id="arrow" name="caret-back-outline"></ion-icon></span>
                 </a>
             </li>
         </ul>
     </div>
     <div id="tooltip">
-        <span id="tooltiptext">Go on our GitHub!</span>
+        <span id="tooltiptext"><ion-icon name="logo-github"></ion-icon> Go on our GitHub!</span>
         <span><a href="https://github.com/ZeyKra/Guinted"><img id="guinted" src="../icon/Guinted-logo.png"></a></span>
     </div>
     <!-- You can also require other files to run in this process -->
