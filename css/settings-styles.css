@@ -179,3 +179,15 @@ body{
 .wheel:hover{
     -webkit-transform: rotate(360deg) translateZ(0);
 }
+#theme{
+    position: absolute;
+    top: 207px;
+    left: 520px;
+}
+label#theme{
+    position: absolute;
+    left: 448px;
+    top: 205px;
+    color: white;
+    font-size: 20px;
+}
