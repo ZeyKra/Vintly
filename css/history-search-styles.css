@@ -2,9 +2,6 @@
 
 body{
     background: linear-gradient(146.11deg, #342574 20.43%, rgba(255, 255, 255, 0) 79.91%), linear-gradient(202.81deg, #0c0635 38.99%, rgba(255, 255, 255, 0) 85.2%), #04001d;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     justify-content: center;
     height: 100vh;
 }
@@ -18,7 +15,7 @@ body{
     box-sizing: border-box;
 }
 body{
-    min-height:100vh ;
+    min-height:100vh;
 }
 .nav{
     position: fixed;
