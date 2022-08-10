@@ -20,6 +20,6 @@
     "electron": "^19.0.9"
   },
   "dependencies": {
-    "vinted-monitor": "^0.0.16"
+    "vinted-monitor": "^0.1.0"
   }
 }
