@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root{
+   --color-background: #FFFFFF;
+   --color-title: #252525;
+   --color-navbar: #4F4F4F;
+   --color-navigate: #161616;
+   --color-navigate-active: #383838;
+}
+
+.dark-variable{
+   --color-background: #222222;
+   --color-title: #f1f1f1;
+   --color-navbar: #e2e2e2;
+   --color-navigate: #fafafa;
+   --color-navigate-active: #dadada;
+}
+
+/* ==================== TOP ==================== */
+
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: Poppins, sans-serif;
+}
+html{
+   background: var(--color-background);
+}
+.top{
+   height: 100vh;
+   width: 100%;
+
+}
+nav {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding-top: 20px;
+   padding-left: 18%;
+   padding-right: 18%;
+   margin-bottom: 3rem;
+}
+nav ul li{
+   list-style-type: none;
+   display: inline-block;
+   padding: 10px 20px;
+}
+nav ul li a{
+   color: var(--color-navbar);
+   text-decoration: none;
+   font-weight: bold;
+}
+nav ul li a:hover{
+   transition: .3s;
+}
+.top nav ul li a span{
+   transition: .3s;
+   font-size: 2.5rem;
+   cursor: pointer;
+}
+
+/* ==================== Container ==================== */
+
+.main{
+   height: 60vh;
+   width: 100%;
+   display: inline-block;
+}
+.item-title{
+   text-align: center;
+   color: var(--color-title²);
+}
+.container{
+   height: 300px;
+   width: 300px;
+   background: grey;
+   position: relative;
+   left: 50%;
+   transform: translateX(-50%);
+}
+.navigate button span{
+   font-size: 8rem;
+}
+.navigate button{
+   border: none;
+   color: var(--color-navigate);
+   transition: .3s;
+   background: none;
+}
+.navigate button:hover{
+   color: var(--color-navigate-active);
+}
+.previous{
+   position: relative;
+   left: 50%;
+   transform: translateX(-114%);
+}
+.next{
+   position: relative;
+   left: 50%;
+   transform: translateX(-88%);
+}
