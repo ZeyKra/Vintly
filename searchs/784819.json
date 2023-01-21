@@ -1,0 +1,25 @@
+{
+  "id": 421733,
+  "name": "Janice Ferry",
+  "username": "stanton.sabrina",
+  "email": "sauer.dillan@hotmail.com",
+  "address": {
+    "street": "Walsh Falls",
+    "suite": "Optio id.",
+    "city": "East Stephanmouth",
+    "zipcode": "42932-8320",
+    "geo": {
+      "lat": "-13.990335",
+      "lng": "54.639458"
+    }
+  },
+  "phone": "1-725-753-3182",
+  "website": "fay.net",
+  "company": {
+    "companyName": "Walter, Durgan and Carter",
+    "catchPhrase": "Facetoface background contingency",
+    "bs": "streamline interactive deliverables"
+  },
+  "created_at": 1055320096,
+  "updated_at": 1123177783
+}

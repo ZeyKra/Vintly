@@ -1,0 +1,9 @@
+{
+
+    "paths" : {
+        "search": "./searchs/",
+        "assets": "./assets/"
+        
+    }
+    
+}
