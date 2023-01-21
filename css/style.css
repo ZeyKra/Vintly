@@ -3,9 +3,10 @@
 :root{
    --color-background: #FFFFFF;
    --color-title: #252525;
-   --color-navbar: #4F4F4F;
+   --color-icon: #4F4F4F;
    --color-navigate: #161616;
    --color-navigate-active: #383838;
+   --color-border: #686868;
    --color-slide-circle: rgba(126, 126, 126, 0.336);
 
    --border-radius-main: 10px;
@@ -15,10 +16,10 @@
    --box-shadow-main: 0px 6px 17px 2px rgba(0,0,0,0.63);
 }
 
-.dark-variable{
+.dark-theme-variable{
    --color-background: #222222;
    --color-title: #f1f1f1;
-   --color-navbar: #e2e2e2;
+   --color-icon: #e2e2e2;
    --color-navigate: #fafafa;
    --color-navigate-active: #dadada;
 }
@@ -52,7 +53,7 @@ nav ul li{
    padding: 10px 20px;
 }
 nav ul li a{
-   color: var(--color-navbar);
+   color: var(--color-icon);
    text-decoration: none;
    font-weight: bold;
 }
@@ -115,7 +116,6 @@ nav ul li a:hover{
 
 /* =========================== SLIDE SHOW =========================== */
 
-
 .slide{
    display: flex;
    justify-content: center;
@@ -138,18 +138,38 @@ main .slide ul li{
 }
 
 /* =============================== FOOTER =============================== */
+
 footer{
    /* height: 21.5vh; */
-   height: 21.5%;
 }
 footer .text{
-   background: gray;
    margin-left: 0.5rem;
-   border-radius: var(--border-radius-footer-text);
-   width: 10rem;
-   height: 97%;
+   /* background: gray; */
+   border-width: 0px 1px 0px 0px;
+   border-style: solid;
+   border-color: var(--color-border);
+   /* border-radius: var(--border-radius-footer-text); */
+   width: 17rem;
+   float: left;
 }
-
+footer .text .text-in{
+   margin-left: 1rem;
+   margin-right: .4rem;
+}
+footer h4{
+   margin-left: 1.5rem;
+   margin-bottom: 0.3rem;
+}
+.pfp{
+   width: 5rem;
+   height: 5rem;
+   margin-left: .4rem;
+}
+.fav-icon span{
+   font-size: 2.3rem;
+   margin-left: .4rem;
+   color: var(--color-icon);
+}
 /* ======================== MEDIA QUERIES ======================== */
 
 @media screen and (max-width: 388px){
