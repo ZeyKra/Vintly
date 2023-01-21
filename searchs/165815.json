@@ -1,0 +1,25 @@
+{
+  "id": 17127309,
+  "name": "Joshua Langworth",
+  "username": "juana74",
+  "email": "xokon@yahoo.com",
+  "address": {
+    "street": "Beatty Mill",
+    "suite": "Fuga dolor minima.",
+    "city": "New Zackary",
+    "zipcode": "37804-9265",
+    "geo": {
+      "lat": "29.098156",
+      "lng": "105.07094"
+    }
+  },
+  "phone": "+16376571134",
+  "website": "graham.com",
+  "company": {
+    "companyName": "Schuppe, Swaniawski and Hartmann",
+    "catchPhrase": "Open-architected intermediate alliance",
+    "bs": "leverage B2C users"
+  },
+  "created_at": 532853699,
+  "updated_at": 12454771
+}
