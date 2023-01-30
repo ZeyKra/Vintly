@@ -3,15 +3,23 @@
 :root{
    --color-background: #FFFFFF;
    --color-title: #252525;
-   --color-navbar: #4F4F4F;
+   --color-icon: #4F4F4F;
    --color-navigate: #161616;
    --color-navigate-active: #383838;
+   --color-border: #686868;
+   --color-slide-circle: rgba(126, 126, 126, 0.336);
+
+   --border-radius-main: 10px;
+   --border-radius-footer-text: 10px;
+   --border-radius-slide-circle: 50px;
+
+   --box-shadow-main: 0px 6px 17px 2px rgba(0,0,0,0.63);
 }
 
-.dark-variable{
+.dark-theme-variable{
    --color-background: #222222;
    --color-title: #f1f1f1;
-   --color-navbar: #e2e2e2;
+   --color-icon: #e2e2e2;
    --color-navigate: #fafafa;
    --color-navigate-active: #dadada;
 }
@@ -37,8 +45,6 @@ nav {
    align-items: center;
    justify-content: center;
    padding-top: 20px;
-   padding-left: 18%;
-   padding-right: 18%;
    margin-bottom: 3rem;
 }
 nav ul li{
@@ -47,7 +53,7 @@ nav ul li{
    padding: 10px 20px;
 }
 nav ul li a{
-   color: var(--color-navbar);
+   color: var(--color-icon);
    text-decoration: none;
    font-weight: bold;
 }
@@ -59,8 +65,12 @@ nav ul li a:hover{
    font-size: 2.5rem;
    cursor: pointer;
 }
+.top nav ul li:nth-child(2){
+   margin-left: 2rem;
+   margin-right: 2rem;
+}
 
-/* ==================== Container ==================== */
+/* ==================== CONTAINER ==================== */
 
 .main{
    height: 60vh;
@@ -69,18 +79,21 @@ nav ul li a:hover{
 }
 .item-title{
    text-align: center;
-   color: var(--color-title²);
+   color: var(--color-title);
+   font-size: 1.2rem;
 }
 .container{
    height: 300px;
    width: 300px;
-   background: grey;
+   border-radius: var(--border-radius-main);
+   box-shadow: var(--box-shadow-main);
    position: relative;
    left: 50%;
    transform: translateX(-50%);
+   overflow: hidden;
 }
 .navigate button span{
-   font-size: 8rem;
+   font-size: 7rem;
 }
 .navigate button{
    border: none;
@@ -100,4 +113,109 @@ nav ul li a:hover{
    position: relative;
    left: 50%;
    transform: translateX(-88%);
+}
+.container-img{
+   object-fit: cover;
+   width: 100%;
+   height: 100%;
+   border-radius: var(--border-radius-main);
+}
+
+/* =========================== SLIDE SHOW =========================== */
+
+.slide{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+main .slide ul li{
+   list-style-type: none;
+   display: inline-block;
+   padding: 10px 20px;
+}
+.slide-circle{
+   background: var(--color-slide-circle);
+   width: 20px;
+   height: 20px;
+   border-radius: var(--border-radius-slide-circle);
+   transition: .3s;
+}
+.slide ul li:nth-child(3){
+   transform: scale(1.3);
+}
+
+/* =============================== FOOTER =============================== */
+footer .text{
+   margin-left: 0.5rem;
+   border-width: 0px 1px 0px 0px;
+   border-style: solid;
+   border-color: var(--color-border);
+   width: 17rem;
+   float: left;
+}
+footer .text .text-in{
+   margin-left: 1rem;
+   margin-right: .4rem;
+}
+footer h4{
+   margin-left: 1.5rem;
+   margin-bottom: 0.3rem;
+}
+.pfp{
+   width: 5rem;
+   height: 5rem;
+   margin-left: .4rem;
+}
+.fav-icon span{
+   font-size: 2.3rem;
+   margin-left: .4rem;
+   color: var(--color-icon);
+}
+
+/* ======================== MEDIA QUERIES ======================== */
+
+@media screen and (max-width: 388px){
+
+   .top nav ul li a span{
+      font-size: 2rem;
+   }
+   nav {
+      margin-bottom: 1rem;
+   }
+   .top nav ul li:nth-child(2){
+      margin-left: 1rem;
+      margin-right: 1rem;
+   }
+}
+
+/* Galaxy Fold */
+@media screen and (max-width: 310px){
+   .top nav ul li a span{
+      font-size: 1.9rem;
+   }
+   nav {
+      margin-bottom: 1rem;
+   }
+   .top nav ul li:nth-child(2){
+      margin-left: 0rem;
+      margin-right: 0rem;
+   }
+   .container{
+      height: 230px;
+      width: 230px;
+   }
+   .slide-circle{
+      width: 20px;
+      height: 20px;
+   }
+   .slide ul li:nth-child(3){
+      margin-left: -10px;
+      margin-right: -10px;
+   }
+   .slide ul li:nth-child(4){
+      margin-right: -10px;
+   }
+   .slide ul li:nth-child(2){
+      margin-left: -10px;
+   }
 }
