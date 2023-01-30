@@ -1,6 +1,3 @@
-import { join, dirname } from 'node:path'
-import { fileURLToPath } from 'node:url'
-
 import { Low } from 'lowdb'
 import { JSONFile, JSONFileSync } from 'lowdb/node'
 
@@ -21,6 +18,10 @@ async function load(path, file) {
     await db.read()
 
     return db;
+}
+
+async function generate() {
+    
 }
 
 export default {

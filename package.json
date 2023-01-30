@@ -8,7 +8,8 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "test": "node test.js"
+    "test": "node ./src/testing/test.js",
+    "tmonitor": "node ./src/testing/monitor.js"
   },
   "dependencies": {
     "expo": "^47.0.13",
@@ -16,7 +17,8 @@
     "fs": "^0.0.1-security",
     "lowdb": "^5.0.5",
     "react": "18.1.0",
-    "react-native": "0.70.6"
+    "react-native": "0.70.6",
+    "vinted-monitor": "^0.2.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"

@@ -4,7 +4,7 @@ import database from './database.js';
 
 
 //import config from `./config.json` assert { type: `json` };
-const { default: config } = await import("../config.json", { assert: { type: "json", }, });
+const { default: config } = await import("../../config.json", { assert: { type: "json", }, });
 
 var SearchList = {};
 

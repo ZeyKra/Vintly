@@ -1,5 +1,5 @@
 //import database from './scripts/database.js';
-import search from './scripts/search.js';
+import search from '../scripts/search.js';
 
 var sl = await search.searchlist()
 
