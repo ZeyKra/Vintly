@@ -88,3 +88,7 @@ main div span.material-symbols-rounded{
    padding-right: 1rem;
    padding-top: 0.3rem;
 }
+.settings-btn{
+   border: none;
+   font-size: 1rem;
+}
