@@ -8,7 +8,8 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "test": "node test.js"
+    "test": "node ./src/testing/test.js",
+    "tmonitor": "node ./src/testing/monitor.js"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
@@ -21,9 +22,7 @@
     "lowdb": "^5.0.5",
     "react": "18.2.0",
     "react-native": "0.71.1",
-    "react-native-web": "~0.18.9",
-    "react-dom": "18.1.0",
-    "@expo/webpack-config": "^0.17.2"
+    "vinted-monitor": "^0.2.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"
