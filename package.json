@@ -16,7 +16,7 @@
     "@fortawesome/free-regular-svg-icons": "^6.2.1",
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
-    "expo": "^47.0.13",
+    "expo": "^48.0.15",
     "expo-status-bar": "~1.4.2",
     "fs": "^0.0.1-security",
     "lowdb": "^5.0.5",
