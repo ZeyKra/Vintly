@@ -1,4 +1,4 @@
-import { Text, View } from "react-native";
+import { Alert, Button, Text, View } from "react-native";
 import VintedMonitor from "vinted-monitor";
 
 var first_name: string = "Benji";
@@ -14,6 +14,13 @@ export default function Index() {
       }}
     >
       <Text>Salut {first_name} 👋</Text>
+      <Button
+        onPress={ () => alert("Boutton pressé") }
+        title="Boutton"
+        color="#841584"
+        accessibilityLabel="Learn more about this purple button"
+      />
+      
     </View>
   );
 }
