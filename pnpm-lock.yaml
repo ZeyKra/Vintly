@@ -44,6 +44,9 @@ importers:
       puppeteer:
         specifier: ^23.6.0
         version: 23.6.0(typescript@5.3.3)
+      puppeteer-core:
+        specifier: ^23.6.0
+        version: 23.6.0
       react:
         specifier: 18.2.0
         version: 18.2.0

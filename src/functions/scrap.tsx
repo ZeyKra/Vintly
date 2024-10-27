@@ -20,7 +20,6 @@ async function getVintedItems(query: string): Promise<Array<VintedItem>> {
             return vinted_item;
         });
     });
-
     await browser.close();
     return items;
 }

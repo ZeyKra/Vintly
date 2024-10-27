@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, Button, FlatList, StyleSheet, ListRenderItem } from 'react-native';
+import { useEffect, useState } from 'react';
 import VintedItem from '@/interfaces/VintedItem';
 import scrap from '@/src/functions/scrap';
 
@@ -8,17 +9,35 @@ interface DataItem {
   first_name: string;
 }
 
+/*
 const data: DataItem[] = [
   { id: '1', first_name: 'John' },
   { id: '2', first_name: 'Jane' },
   { id: '3', first_name: 'Doe' },
   // Add more items as needed
-];
+];*/
+
+const [data, setData] = useState<VintedItem[]>([]);
+
+useEffect(() => {
+  const fetchData = async () => {
+    try {
+      const items = await scrap.getVintedItems('lanvin');
+      setData(items);
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
+  };
+
+  fetchData();
+}, []);
+
 
 export default function Index() {
-  const renderItem: ListRenderItem<DataItem> = ({ item }) => (
+
+  const renderItem: ListRenderItem<VintedItem> = ({ item }) => (
     <View style={styles.itemContainer}>
-      <Text>Salut {item.id} 👋</Text>
+      <Text>Salut {item.title} 👋</Text>
       <Button
         onPress={() => alert("Boutton pressé")}
         title="Boutton"
@@ -32,7 +51,7 @@ export default function Index() {
     <FlatList
       data={data}
       renderItem={renderItem}
-      keyExtractor={item => item.id}
+      keyExtractor={item => item.title}
       style={styles.container}
     />
   );
