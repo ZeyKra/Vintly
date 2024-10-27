@@ -1,5 +1,7 @@
 import React from 'react';
 import { View, Text, Button, FlatList, StyleSheet, ListRenderItem } from 'react-native';
+import VintedItem from '@/interfaces/VintedItem';
+import scrap from '@/src/functions/scrap';
 
 interface DataItem {
   id: string;
@@ -16,7 +18,7 @@ const data: DataItem[] = [
 export default function Index() {
   const renderItem: ListRenderItem<DataItem> = ({ item }) => (
     <View style={styles.itemContainer}>
-      <Text>Salut {item.first_name} 👋</Text>
+      <Text>Salut {item.id} 👋</Text>
       <Button
         onPress={() => alert("Boutton pressé")}
         title="Boutton"
